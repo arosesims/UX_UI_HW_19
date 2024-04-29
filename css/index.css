@@ -1,0 +1,259 @@
+body {
+    font-family: "Lato";
+    color: #18403d;
+}
+
+/* Text Styles */
+p {
+    font-size: 16pt;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 20pt;
+    font-weight: 700;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 30pt;
+    font-weight: 700;
+    color: #86c47a;
+    text-transform: uppercase;
+    line-height: 95%;
+}
+
+h1 {
+    font-size: 50pt;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 85%;
+}
+
+button {
+    font-family: Lato;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    background-color: #18403d;
+    border: #18403d;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+}
+
+/* Page Layout */
+#heroGrid {
+    display: grid;
+    min-height: 500px;
+    max-height: 3000px;
+    padding: 0 1%;
+    grid-template-columns: 30% 2% 67%;
+    grid-template-rows: 400px 650px;
+    grid-template-areas:
+        "imageOne imageOne imageTwo"
+        "colOne waveCol colThree"
+}
+
+.heroGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+#imageOne {
+    grid-area: imageOne;
+    background-image: url("/images/Image1.png");
+}
+
+#imageTwo {
+    grid-area: imageTwo;
+    background-image: url("/images/Image2.png");
+}
+
+#colOne {
+    grid-area: colOne;
+    text-align: right;
+    justify-content: right;
+    padding-right: 15px;
+}
+
+#waveCol {
+    margin-top: 30px;
+    grid-area: waveCol;
+    background-image: url("/images/Wave.png");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+}
+
+#colThree {
+    grid-area: colThree;
+    padding-left: 15px;
+    justify-content: left;
+}
+
+/* Page Layout - Skills */
+.waveTwo {
+    margin-left: 31%;
+    margin-right: 2%;
+    float: left;
+}
+
+#mySkills {
+    height: 950px;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.flexItem {
+    float: right;
+    padding: 1% 0;
+    align-items: center;
+}
+
+.flexItem img {
+    float: left;
+    margin-right: 2%;
+}
+
+
+/* Header */
+.inline-block {
+    display: inline-block;
+    align-items: center;
+}
+
+nav {
+    margin-right: 1%;
+    width: 79%;
+    justify-content: right;
+}
+
+.logo {
+    float: left;
+    margin-top: 8px;
+    margin-left: 1%;
+    width: 19%;
+}
+
+.navList {
+    list-style-type: none;
+    float: right;
+}
+
+.navItems {
+    display: inline;
+    padding: 8px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: lightgray;
+}
+
+#footerGrid {
+    display: grid;
+    padding: 3%;
+    grid-template-columns: 30%;
+    grid-template-areas:
+        "contactButton myWork"
+}
+
+#contactButton {
+    text-align: right;
+    padding: 3% 7%;
+}
+
+.flexConatinerTwo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.workEx {
+    background-color: white;
+    border-radius: 8px;
+    width: 500px;
+    margin: 1% 0;
+    text-align: left;
+
+}
+
+.workEx img {
+    float: left;
+    margin-right: 10px;
+}
+
+
+.footerLinks {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #imageOne {
+        display: none;
+    }
+
+    #waveCol {
+        display: none;
+    }
+
+    .waveTwo {
+        display: none;
+    }
+
+    #colOne {
+        text-align: center;
+        justify-content: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .flexContainer {
+        padding-bottom: 0px;
+        padding-left: 3%;
+    }
+
+    #mySkills {
+        height: 500px;
+    }
+
+    #heroGrid {
+        grid-template-columns: 99%;
+        grid-template-rows: 400px 400px 500px;
+        grid-template-areas:
+            "imageTwo"
+            "colOne"
+            "colThree";
+    }
+
+    #footerGrid {
+        grid-template-columns: 99%;
+        grid-template-rows: 85px 1fr;
+        grid-template-areas:
+            "contactButton"
+            "myWork";
+    }
+
+    #contactButton {
+        text-align: center;
+    }
+}
