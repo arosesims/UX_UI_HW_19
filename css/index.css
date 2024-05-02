@@ -114,10 +114,12 @@ button {
     margin-bottom: 100px;
 }
 
+/* change the text in here too*/
 .flexItem {
     float: right;
     padding: 1% 0;
     align-items: center;
+    transition: transform .4s ease;
 }
 
 .flexItem img {
@@ -125,6 +127,50 @@ button {
     margin-right: 2%;
 }
 
+
+/* Skills Hover Interaction */
+.flexItem:hover {
+    transform: translate(20px);
+}
+
+.persona .personaBody {
+    display: none;
+}
+
+.persona:hover .personaTitle {
+    display: none;
+}
+
+.persona:hover .personaBody {
+    display: inline;
+    justify-content: auto;
+}
+
+.uiDesign .uiDesignBody {
+    display: none;
+}
+
+.uiDesign:hover .uiDesignTitle {
+    display: none;
+}
+
+.uiDesign:hover .uiDesignBody {
+    display: inline;
+    justify-content: auto;
+}
+
+.wireframe .wireframeBody {
+    display: none;
+}
+
+.wireframe:hover .wireframeTitle {
+    display: none;
+}
+
+.wireframe:hover .wireframeBody {
+    display: inline;
+    justify-content: auto;
+}
 
 /* Header */
 .inline-block {
