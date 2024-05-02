@@ -33,6 +33,7 @@ h1 {
 button {
     font-family: Lato;
     font-size: 16px;
+    overflow: hidden;
     color: white;
     text-align: center;
     background-color: #18403d;
@@ -40,6 +41,41 @@ button {
     border-radius: 5px;
     width: 150px;
     height: 50px;
+    cursor: pointer;
+}
+
+.rippleButton {
+    overflow: hidden;
+}
+
+/* button animation refernced from https://www.sitepoint.com/button-micro-interactions/#ripplemicrointeraction */
+.rippleButton:active {
+    transform: scale(.95);
+}
+
+.rippleButton span {
+    /* need to change the position */
+    position: absolute;
+    background: #071b1a;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: ripple 2s linear infinite;
+    transition: 0.5s;
+}
+
+@keyframes ripple {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0.5;
+    }
+
+    100% {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
 }
 
 /* Page Layout */
@@ -217,7 +253,7 @@ nav {
 
 #contactButton {
     text-align: right;
-    padding: 3% 7%;
+    margin: 3% 7%;
 }
 
 .flexConatinerTwo {
@@ -301,5 +337,6 @@ nav {
 
     #contactButton {
         text-align: center;
+        position: relative;
     }
 }
