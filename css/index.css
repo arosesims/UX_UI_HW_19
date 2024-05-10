@@ -102,12 +102,12 @@ button {
 
 #imageOne {
     grid-area: imageOne;
-    background-image: url("/images/Image1.png");
+    background-image: url("../images/Image1.png");
 }
 
 #imageTwo {
     grid-area: imageTwo;
-    background-image: url("/images/Image2.png");
+    background-image: url("../images/Image2.png");
 }
 
 #colOne {
