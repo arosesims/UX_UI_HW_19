@@ -102,12 +102,12 @@ button {
 
 #imageOne {
     grid-area: imageOne;
-    background-image: url("../images/Image1.png");
+    background-image: url("images/Image1.png");
 }
 
 #imageTwo {
     grid-area: imageTwo;
-    background-image: url("../images/Image2.png");
+    background-image: url("images/Image2.png");
 }
 
 #colOne {
@@ -120,7 +120,7 @@ button {
 #waveCol {
     margin-top: 30px;
     grid-area: waveCol;
-    background-image: url("../images/Wave.png");
+    background-image: url("images/Wave.png");
     background-size: 15px;
     background-repeat: no-repeat;
     background-position: top;
