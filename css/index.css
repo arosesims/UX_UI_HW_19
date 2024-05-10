@@ -268,10 +268,27 @@ nav {
     background-color: white;
     border-radius: 8px;
     width: 500px;
+    height: 77px;
     margin: 1% 0;
     text-align: left;
+}
+
+.cardClick {
+    margin-top: -11px;
+}
+
+.a {
+    color: #18403d;
+    text-decoration: none;
 
 }
+
+
+.a:visited {
+    color: #18403d;
+    text-decoration: none;
+}
+
 
 .workEx img {
     float: left;
