@@ -120,7 +120,7 @@ button {
 #waveCol {
     margin-top: 30px;
     grid-area: waveCol;
-    background-image: url("/images/Wave.png");
+    background-image: url("../images/Wave.png");
     background-size: 15px;
     background-repeat: no-repeat;
     background-position: top;
